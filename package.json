@@ -7,7 +7,6 @@
   "module": "dist/rexlib.es5.js",
   "typings": "dist/types/rexlib.d.ts",
   "files": [
-
     "dist"
   ],
   "author": "569835014 <569835014@qq.com>",
@@ -92,11 +91,12 @@
     "coveralls": "^3.0.2",
     "cross-env": "^5.2.0",
     "cz-conventional-changelog": "^2.1.0",
-    "husky": "^1.0.1",
+    "husky": "^4.3.0",
     "jest": "^23.6.0",
     "jest-config": "^23.6.0",
     "lint-staged": "^8.0.0",
     "lodash.camelcase": "^4.3.0",
+    "pre-commit": "^1.2.2",
     "prettier": "^1.14.3",
     "prompt": "^1.0.0",
     "replace-in-file": "^3.4.2",
@@ -117,5 +117,11 @@
     "tslint-config-standard": "^8.0.1",
     "typedoc": "^0.12.0",
     "typescript": "^3.0.3"
+  },
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
   }
 }
